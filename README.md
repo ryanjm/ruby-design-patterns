@@ -39,3 +39,8 @@ I'm going to cover 4 of the 23 + 2 more:
 * Observer
 * Delegation
 * Concerns
+
+## Other Reading
+
+* [Design Patterns in Ruby](http://rubylearning.com/blog/2010/11/02/how-does-one-use-design-patterns-in-ruby/)
+* [Cute or Ugly](http://blog.arkency.com/2013/05/is-it-cute-or-ugly/) - Reminder to be smart about using Design Patterns

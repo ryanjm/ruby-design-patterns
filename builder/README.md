@@ -1,8 +1,6 @@
 # Builder
 
-Is a creational pattern.
-
-Intent: Simplify the construction of an object.
+> Separate the construction of a complex object from its representation so that the same construction process can create different representations.
 
 We'll use this when we want to be able to create multiple representations of the object that is constructed.
 

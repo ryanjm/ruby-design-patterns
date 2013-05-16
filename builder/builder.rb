@@ -12,6 +12,10 @@ class Person
 end
 
 class PersonBuilder
+  def initialize
+    @attr = {}
+  end
+
   def setTitle(title)
     raise "setTitle not implimented by subclass"
   end
@@ -22,10 +26,6 @@ class PersonBuilder
 end
 
 class PersonJSONBuilder < PersonBuilder
-  def initialize
-    @attr = {}
-  end
-
   def setTitle(title)
     @title = title
   end
@@ -40,10 +40,6 @@ class PersonJSONBuilder < PersonBuilder
 end
 
 class PersonTextBuilder < PersonBuilder
-  def initialize
-    @attr = {}
-  end
-
   def setTitle(title)
     @title = title
   end
