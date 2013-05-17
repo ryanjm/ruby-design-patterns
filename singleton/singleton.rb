@@ -1,6 +1,6 @@
 # Simple
 
-class Logger
+module Logger
 
   def self.log(msg)
     @@log ||= File.open("log.txt", "a")
@@ -8,7 +8,6 @@ class Logger
   end
 
 end
-
 
 Logger.log("message 1 - Logger")
 Logger.log("message 2 - Logger")

@@ -21,7 +21,7 @@ class Person
   def age=(new_age)
     changed
     @age = new_age
-    notify_observers(self)
+    notify_observers(:new_age, self)
   end
 end
 

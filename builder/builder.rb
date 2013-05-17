@@ -70,4 +70,4 @@ puts b1.getJSON
 b2 = PersonTextBuilder.new
 p.builder = b2
 p.build
-puts b2.getText
+puts b2.getText∂

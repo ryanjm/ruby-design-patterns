@@ -4,6 +4,10 @@ class Coffee
   def cost
     2
   end
+
+  def origin
+    "S."
+  end
 end
 
 class WhiteCoffee
@@ -20,6 +24,7 @@ module Decorator
   end
 
   def method_missing(method, *args)
+    puts "Missing #{method} in #{self.class}"
     args.empty? ? @decorated.send(method) : @decorated.send(method, args)
   end
 end
@@ -48,5 +53,9 @@ class Sprinkles
   end
 end
 
-puts "Whip + Coffee = #{Whip.new(Coffee.new).cost}"
-puts "+ Springles + Milk = #{Sprinkles.new(Whip.new(Milk.new(Coffee.new))).cost}"
+# puts "Whip + Coffee = #{Whip.new(Coffee.new).cost}"
+# puts "+ Springles + Milk = #{Sprinkles.new(Whip.new(Milk.new(Coffee.new))).cost}"
+
+c = Coffee.new
+puts Whip.new(c).cost
+puts Whip.new(c).origin

@@ -1,8 +1,14 @@
-message 1
-message 2
-message 3
-message 4
-message 1
-message 2
-message 3
-message 4
+message 1 - Logger
+message 2 - Logger
+message 3 - Logger
+message 4 - Logger
+message1 - Logger2
+message2 - Logger2
+message3 - Logger2
+message1 - Logger2
+message2 - Logger2
+message3 - Logger2
+message 1 - Logger
+message 2 - Logger
+message 3 - Logger
+message 4 - Logger
